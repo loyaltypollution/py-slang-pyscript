@@ -22,10 +22,7 @@ export default [{
     },
     plugins: [
       typescript(), 
-      nodeResolve({
-        preferBuiltins: false,
-        browser: true
-      }), 
+      nodeResolve(), 
       commonjs(), 
       polyfillNode()
     ]
