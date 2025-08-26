@@ -9,6 +9,11 @@ export default class PythonEvaluator extends BasicEvaluator {
       super(conductor);
       this.pyodide = loadPyodideGeneric().then(async pyodide => {
         await pyodide.loadPackage("micropip");
+        await pyodide.setStdout({
+          batched: (output: string) => {
+            this.conductor.sendOutput(output);
+          }
+        });
         return pyodide;
       });
     }
@@ -16,9 +21,7 @@ export default class PythonEvaluator extends BasicEvaluator {
     async evaluateChunk(chunk: string): Promise<void> {
       const pyodide = await this.pyodide;
       
-      // regex match these lines
-      // `import ()` | `import () as (?:)` | `from () import (?:)`
-      // for micropip installation
+      // import packages via micropip installation
       const importedPackageRoots = new Set<string>();
       const lines = chunk.split(/\r?\n/);
 
@@ -57,6 +60,6 @@ export default class PythonEvaluator extends BasicEvaluator {
       }
 
       const output = await pyodide.runPythonAsync(chunk);
-      this.conductor.sendOutput(`${output}`);
+      this.conductor.sendOutput(output);
     }
 }

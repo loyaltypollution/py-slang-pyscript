@@ -322,8 +322,8 @@ __metadata:
 
 "@sourceacademy/conductor@https://github.com/loyaltypollution/conductor.git#src":
   version: 0.2.1
-  resolution: "@sourceacademy/conductor@https://github.com/loyaltypollution/conductor.git#commit=586c896f9b00cff57105ad0e942d13c49315206e"
-  checksum: 10c0/9f88913f5aeb026ae397ecbd66cc2f7f00ef3254e50b4da1033e53e9666bbcc8adae1b26990c4504eac88e0db18efd5438c8be5f483678543c2bc44f338687b4
+  resolution: "@sourceacademy/conductor@https://github.com/loyaltypollution/conductor.git#commit=39875b79f3d97b9d11f8c1502c1fd097342c8202"
+  checksum: 10c0/b8d6cc6da493f2489faa92b88c1f099990dfed31e27fb30fba7c04d05dcd5b76f58c6e0954669279fdfff8f9a8f80a76a5458f1633c372b585ba89dc394ca703
   languageName: node
   linkType: hard
 
@@ -1162,8 +1162,8 @@ __metadata:
   linkType: hard
 
 "node-gyp@npm:latest":
-  version: 11.4.1
-  resolution: "node-gyp@npm:11.4.1"
+  version: 11.4.2
+  resolution: "node-gyp@npm:11.4.2"
   dependencies:
     env-paths: "npm:^2.2.0"
     exponential-backoff: "npm:^3.1.1"
@@ -1177,7 +1177,7 @@ __metadata:
     which: "npm:^5.0.0"
   bin:
     node-gyp: bin/node-gyp.js
-  checksum: 10c0/475d5c51ef44cee15668df4ad2946e92ad66397adaae4f695afc080ea7a8812c8d93341c1eabe42a46ee615bbde90123b548c7f61388be48c6b0bbc5ea9c53fe
+  checksum: 10c0/0bfd3e96770ed70f07798d881dd37b4267708966d868a0e585986baac487d9cf5831285579fd629a83dc4e434f53e6416ce301097f2ee464cb74d377e4d8bdbe
   languageName: node
   linkType: hard
 
