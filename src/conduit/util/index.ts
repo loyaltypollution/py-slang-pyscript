@@ -1,1 +1,0 @@
-export { checkIsPluginClass } from "./checkIsPluginClass";

@@ -8,8 +8,7 @@
  * - Maintains backward compatibility with existing conductor framework
  */
 
-import { BasicEvaluator } from "../conductor/runner";
-import type { IRunnerPlugin } from "../conductor/runner/types";
+import { BasicEvaluator, IRunnerPlugin } from "@sourceacademy/conductor";
 import { PackageManager } from "./services/package-manager";
 import { PackageManagerConfig } from "./types/package";
 
@@ -66,7 +65,7 @@ async function ensurePyodideLoaded(): Promise<void> {
   return pyodideReady;
 }
 
-export class PythonEvaluator extends BasicEvaluator {
+export default class PythonEvaluator extends BasicEvaluator {
   constructor(conductor: IRunnerPlugin) {
     super(conductor);
   }

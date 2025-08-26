@@ -1,1 +1,0 @@
-export { moduleMethod } from "./moduleMethod";
