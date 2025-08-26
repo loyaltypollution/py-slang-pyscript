@@ -20,5 +20,13 @@ export default [{
       sourcemap: true,
       inlineDynamicImports: true,
     },
-    plugins: [typescript(), nodeResolve(), commonjs(), polyfillNode()]
+    plugins: [
+      typescript(), 
+      nodeResolve({
+        preferBuiltins: false,
+        browser: true
+      }), 
+      commonjs(), 
+      polyfillNode()
+    ]
   }];
