@@ -1,4 +1,4 @@
 import { initialise } from "@sourceacademy/conductor";
-import PythonEvaluator from "./python/python-evaluator";
+import PythonEvaluator from "./PythonEvaluator";
 
-export default initialise(PythonEvaluator);
+const {runnerPlugin, conduit} = initialise(PythonEvaluator);
