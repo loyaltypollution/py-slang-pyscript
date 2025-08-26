@@ -39,8 +39,7 @@ export function loadPyodideGeneric() {
         const indexURL = IN_NODE ? await ensureLocalPyodideAssets(cdnBase) : cdnBase;
         const pyodide = await loadPyodide({
             indexURL,
-            fullStdLib: true,
-            stdout: (msg: string) => console.log(`Pyodide: ${msg}`),
+            fullStdLib: true
         });
         return pyodide;
     })();
