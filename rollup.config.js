@@ -8,7 +8,6 @@ export default [{
     output: {
       file: 'dist/index.js',
       format: 'iife',
-      sourcemap: true,
       inlineDynamicImports: true,
     },
     plugins: [typescript(), nodeResolve(), commonjs(), polyfillNode()]
@@ -17,7 +16,6 @@ export default [{
     output: {
       file: 'dist/pyscript-evaluator.cjs',
       format: 'cjs',
-      sourcemap: true,
       inlineDynamicImports: true,
     },
     plugins: [typescript(), nodeResolve({browser:true}), commonjs(), polyfillNode()]

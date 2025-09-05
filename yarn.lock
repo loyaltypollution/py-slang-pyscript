@@ -322,8 +322,8 @@ __metadata:
 
 "@sourceacademy/conductor@https://github.com/loyaltypollution/conductor.git#src":
   version: 0.2.1
-  resolution: "@sourceacademy/conductor@https://github.com/loyaltypollution/conductor.git#commit=39875b79f3d97b9d11f8c1502c1fd097342c8202"
-  checksum: 10c0/b8d6cc6da493f2489faa92b88c1f099990dfed31e27fb30fba7c04d05dcd5b76f58c6e0954669279fdfff8f9a8f80a76a5458f1633c372b585ba89dc394ca703
+  resolution: "@sourceacademy/conductor@https://github.com/loyaltypollution/conductor.git#commit=e7ae77736f0802a742fcb3a55ed82b05ab950557"
+  checksum: 10c0/5290517cd96025b3a98ff6e4dd44a9ac3c67430250de7d6f6a65f1286692c5111d0b64b2b201f8793907ffdac008576c70bfb415607976ef4e91387e0d089917
   languageName: node
   linkType: hard
 
@@ -571,23 +571,6 @@ __metadata:
   checksum: 10c0/26f364ebcdb6395f95124fda411f63137a4bfb5d3a06453f7f23dfe52502905bd84e0488172e0f9ec295fdc45f05c23d5d91baf16bd26f0fe9acd777a188dc39
   languageName: node
   linkType: hard
-
-"echo-slang@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "echo-slang@workspace:."
-  dependencies:
-    "@rollup/plugin-commonjs": "npm:^28.0.6"
-    "@rollup/plugin-node-resolve": "npm:^16.0.0"
-    "@rollup/plugin-typescript": "npm:^12.1.2"
-    "@sourceacademy/conductor": "https://github.com/loyaltypollution/conductor.git#src"
-    pyodide: "npm:^0.28.2"
-    rollup: "npm:^4.37.0"
-    rollup-plugin-copy: "npm:^3.5.0"
-    rollup-plugin-polyfill-node: "npm:^0.13.0"
-    tslib: "npm:^2.8.1"
-    typescript: "npm:^5.6.3"
-  languageName: unknown
-  linkType: soft
 
 "emoji-regex@npm:^8.0.0":
   version: 8.0.0
@@ -1283,6 +1266,23 @@ __metadata:
   checksum: 10c0/9c7045a1a2928094b5b9b15336dcd2a7b1c052f674550df63cc3f36cd44028e5080448175b6f6ca32b642de81150f5e7b1a98b728f15cb069f2dd60ac2616b96
   languageName: node
   linkType: hard
+
+"py-slang-pyscript@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "py-slang-pyscript@workspace:."
+  dependencies:
+    "@rollup/plugin-commonjs": "npm:^28.0.6"
+    "@rollup/plugin-node-resolve": "npm:^16.0.0"
+    "@rollup/plugin-typescript": "npm:^12.1.2"
+    "@sourceacademy/conductor": "https://github.com/loyaltypollution/conductor.git#src"
+    pyodide: "npm:^0.28.2"
+    rollup: "npm:^4.37.0"
+    rollup-plugin-copy: "npm:^3.5.0"
+    rollup-plugin-polyfill-node: "npm:^0.13.0"
+    tslib: "npm:^2.8.1"
+    typescript: "npm:^5.6.3"
+  languageName: unknown
+  linkType: soft
 
 "pyodide@npm:^0.28.2":
   version: 0.28.2

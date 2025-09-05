@@ -1,6 +1,6 @@
 {
-  "name": "echo-slang",
-  "version": "0.0.1",
+  "name": "py-slang-pyscript",
+  "version": "0.0.2",
   "private": true,
   "type": "module",
   "packageManager": "yarn@4.2.2",
